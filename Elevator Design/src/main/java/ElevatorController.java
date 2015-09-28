@@ -7,12 +7,25 @@ import java.util.Queue;
 public abstract class ElevatorController
 {
     protected Queue requests = new LinkedList();
-    public ElevatorController(Elevator req)
+    private Elevator elevator = null;
+
+    public ElevatorController()
+    {
+        elevator = new Elevator();
+    }
+
+    public ElevatorController(Requests req)
     {
         requests.add(req);
     }
 
-    protected abstract void startElevator();
+    protected void startElevator()
+    {
 
-    protected abstract void shutDownElevator();
+    }
+
+    protected void shutDownElevator()
+    {
+
+    }
 }
