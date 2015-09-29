@@ -4,15 +4,29 @@ import java.util.Queue;
 /**
  * Created by AS025782 on 9/23/2015.
  */
-public abstract class ElevatorController
+public class ElevatorController
 {
     protected Queue requests = new LinkedList();
-    public ElevatorController(Elevator req)
+
+    public ElevatorController()
+    {
+
+    }
+
+
+    /**
+     *
+     * @param req
+     */
+    protected void startElevator(int req)
     {
         requests.add(req);
     }
 
-    protected abstract void startElevator();
+    protected void shutDownElevator()
+    {
 
-    protected abstract void shutDownElevator();
+    }
 }
+
+
