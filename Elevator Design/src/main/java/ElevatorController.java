@@ -13,14 +13,28 @@ public class ElevatorController
 
     }
 
-
     /**
      *
      * @param req
      */
     protected void startElevator(int req)
+
+    private Elevator elevator = null;
+
+    public ElevatorController()
+    {
+        elevator = new Elevator();
+    }
+
+    public ElevatorController(Requests req)
+
     {
         requests.add(req);
+    }
+
+    protected void startElevator()
+    {
+
     }
 
     protected void shutDownElevator()

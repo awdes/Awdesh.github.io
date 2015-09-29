@@ -1,25 +1,46 @@
 /**
  * Created by AS025782 on 9/23/2015.
  */
-public class Elevator
+public class Elevator extends ElevatorController
 {
-    public void moveUp()
+    private int currentFloor;
+    public Elevator()
     {
 
+    }
+
+    public void moveUp()
+    {
+        // open door.
+        // add request to queue.
+        // move elevator.
+        // stop elevator.
+        // blink floor panel.
+        // remove request from queue.
     }
 
     public void moveDown()
     {
-
+        // open door.
+        // add request to queue.
+        // move elevator.
+        // stop elevator.
+        // blink floor panel.
+        // remove request from queue.
     }
 
-    public void openDoor()
+    public int getCurrentFloor()
     {
-
+        return currentFloor;
     }
 
-    public void closeDoor()
+    public String getElevatorMovingDirection()
     {
+        return Direction.DOWN.getValue();
+    }
 
+    public String getElevatorNextDirection()
+    {
+        return Direction.UP.getValue();
     }
 }
