@@ -32,7 +32,7 @@ namespace WordPuzzle
         private static void StoreData()
         {
             // Read in dictionary.
-            using (StreamReader reader = new StreamReader("WordList.txt"))
+            using (StreamReader reader = new StreamReader("File.txt"))
             {
                 while (true)
                 {
@@ -95,11 +95,11 @@ namespace WordPuzzle
         /// </summary>
         private static void SearchWord()
         {
-            using (StreamReader reader = new StreamReader("WordSearch.txt"))
+            using (StreamReader reader = new StreamReader("File.txt"))
             {
                 while (true)
                 {
-                    string[] lines = File.ReadAllLines("WordSearch.txt");
+                    string[] lines = File.ReadAllLines("File.txt");
                     if (lines.Length <= 0)
                     {
                         break;
