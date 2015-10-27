@@ -1,2 +1,3 @@
 # Awdesh.github.io
-Generating site for project.
+Repository contains design patterns by examples and other designs of few real world problems.
+
