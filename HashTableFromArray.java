@@ -1,10 +1,11 @@
 package com.company;
 
 /**
+ * Class represents an object that store item as a key value pair.
+ * Also points to next available object in case multiple values exists for
+ * a unique key.
  * Created by awdesh on 10/26/15.
  */
-
-
 class LinkedHashEntry
 {
     String key;
