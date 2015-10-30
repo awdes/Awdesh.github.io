@@ -27,8 +27,8 @@ public class HashTableFromArray
     private LinkedHashEntry[] table;
 
     /**
-     *
-     * @param ts
+     * Constructor to initialize size of the hash table.
+     * @param ts - An integer represents table size.
      */
     public HashTableFromArray(int ts)
     {
@@ -39,6 +39,9 @@ public class HashTableFromArray
             table[i] = null;
     }
 
+    /**
+     * Creates a hash code. 
+     */
     private int myHash(String ip)
     {
         int hashValue = ip.hashCode();
