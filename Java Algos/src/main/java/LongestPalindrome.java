@@ -1,5 +1,3 @@
-package com.company;
-
 /**
  * Created by awdesh on 10/29/15.
  */
@@ -87,10 +85,11 @@ public class LongestPalindrome
         }
         return true;
     }
-}
 
-class Main1
-{
+    /**
+     * Main method to initiate the call.
+     * @param args
+     */
     public static void main(String[] args)
     {
         String naive = LongestPalindrome.LongestPalindromeNaive("1243421");
