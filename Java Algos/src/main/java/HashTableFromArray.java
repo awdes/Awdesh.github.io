@@ -1,9 +1,10 @@
+package com.company;
+
 /**
- * Class represents an object that store item as a key value pair.
- * Also points to next available object in case multiple values exists for
- * a unique key.
  * Created by awdesh on 10/26/15.
  */
+
+
 class LinkedHashEntry
 {
     String key;
@@ -25,8 +26,8 @@ public class HashTableFromArray
     private LinkedHashEntry[] table;
 
     /**
-     * Constructor to initialize size of the hash table.
-     * @param ts - An integer represents table size.
+     *
+     * @param ts
      */
     public HashTableFromArray(int ts)
     {
@@ -37,9 +38,6 @@ public class HashTableFromArray
             table[i] = null;
     }
 
-    /**
-     * Creates a hash code. 
-     */
     private int myHash(String ip)
     {
         int hashValue = ip.hashCode();

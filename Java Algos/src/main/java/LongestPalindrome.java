@@ -1,3 +1,5 @@
+package com.company;
+
 /**
  * Created by awdesh on 10/29/15.
  */
@@ -69,27 +71,21 @@ public class LongestPalindrome
      * Only need to compare from start to middle element since comparing element from end too,
      * so if we begin from starting of a string and compare from end, when begin pointer reach to
      * the center, pointer from the last will be at center too.
-     * @param input
-     * @param start
-     * @param end
-     * @return
+     * @param input - An array of characters.
+     * @param start - An integer representing the staring index.
+     * @param end - An integer representing the staring index.
+     * @return - A boolean value whether a string is palindrome or not.
      */
     private static boolean ifPalindrome(char[] input, int start, int end)
     {
         for(int i = start; i <= (start + end)/2; i++)
         {
-            if(input[i] == input[start+end-i])
-                continue;
-            else
+            if(!(input[i] == input[start+end-i]))
                 return false;
         }
         return true;
     }
 
-    /**
-     * Main method to initiate the call.
-     * @param args
-     */
     public static void main(String[] args)
     {
         String naive = LongestPalindrome.LongestPalindromeNaive("1243421");
