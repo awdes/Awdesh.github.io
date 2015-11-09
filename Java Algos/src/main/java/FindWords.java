@@ -1,5 +1,3 @@
-package com.company;
-
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
@@ -90,6 +88,11 @@ public class FindWords
         map.put("GOD", 1);
         map.put("is", 1);
         map.put("watching", 1);
+        map.put("cat", 1);
+        map.put("sand", 1);
+        map.put("and", 1);
+        map.put("at", 1);
+        map.put("dog", 1);
 
         if(map.containsKey(word))
             return true;
@@ -99,7 +102,7 @@ public class FindWords
 
     public static void main(String[] args)
     {
-        List<String> ls = findWords("modestmouseiseatingapplepieandGODiswatching");
+        List<String> ls = findWords("catsanddog");
         for(String s: ls)
         {
             System.out.println(s);
