@@ -1,4 +1,4 @@
-package TwoPointer;
+package HashTable;
 
 import java.util.Hashtable;
 

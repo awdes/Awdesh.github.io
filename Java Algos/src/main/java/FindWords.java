@@ -89,6 +89,7 @@ public class FindWords
         map.put("is", 1);
         map.put("watching", 1);
         map.put("cat", 1);
+        map.put("cats", 1);
         map.put("sand", 1);
         map.put("and", 1);
         map.put("at", 1);
