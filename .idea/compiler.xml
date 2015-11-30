@@ -22,6 +22,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="Algorithms" />
+        <module name="BlackJack" />
         <module name="DesignPatterns" />
         <module name="Elevator" />
         <module name="Vehicle" />

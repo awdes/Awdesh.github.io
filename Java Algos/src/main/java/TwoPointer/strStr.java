@@ -50,7 +50,8 @@ public class strStr
         if(needle.length() == 0)
             return 0;
 
-        for(int i=0; i<haystack.length(); i++){
+        for(int i=0; i<haystack.length(); i++)
+        {
             if(i + needle.length() > haystack.length())
                 return -1;
 
@@ -99,16 +100,16 @@ public class strStr
     }
 
     /**
-     *
+     * test case.
      * @param args
      */
     public static void main(String[] args)
     {
         String haystack = "This is a defective demo, Today is sunday. A bit cold weather. It's a start of winter already";
-        String needle = "bit";
+        String needle = "demo";
         int val = strStr1(haystack, needle);
-        int val1 = implmenteStrNaive(haystack, needle);
+//        int val1 = implmenteStrNaive(haystack, needle);
         System.out.println(val);
-        System.out.println(val1);
+//        System.out.println(val1);
     }
 }

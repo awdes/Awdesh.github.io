@@ -51,8 +51,7 @@ public class LongestPalindrome
 
         for(int start = 0; start < input.length; start++)
         {
-            for(int end = start+1; end<= input.length; end++)
-            {
+            for(int end = start+1; end < input.length; end++)            {
                 if(ifPalindrome(input, start, end-1))
                 {
                     if(end-start>longestEnd-longestStart)
