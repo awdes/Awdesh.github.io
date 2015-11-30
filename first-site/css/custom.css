@@ -34,3 +34,8 @@ ul.nav{
   padding: 0 50px;
   height : 780px;
 }
+
+.gi h2{
+  text-align: center;
+  color:red;
+}
