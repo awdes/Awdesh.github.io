@@ -6,13 +6,17 @@ body {
 
 .jumbotron {
       text-align: center;
-      background-image: url('../images/hero_image.jpg');
+      background-image: url('../images/code-2.bmp');
+      /*background-repeat: no-repeat;*/
+      /*position: absolute;*/
       color: white;
-      height: 950px;
+      height: 650px;
+      width: 100%;
 }
 
 .btn-lg {
   font-size: 36px;
+  margin-top: 500px;
 }
 
 /*combining css rules.*/
